@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		FEAD56592114142A002CC3C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD56582114142A002CC3C9 /* AppDelegate.swift */; };
-		FEAD565B2114142A002CC3C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD565A2114142A002CC3C9 /* ViewController.swift */; };
+		FEAD565B2114142A002CC3C9 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD565A2114142A002CC3C9 /* MainController.swift */; };
 		FEAD565E2114142A002CC3C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAD565C2114142A002CC3C9 /* Main.storyboard */; };
 		FEAD56602114142C002CC3C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAD565F2114142C002CC3C9 /* Assets.xcassets */; };
 		FEAD56632114142C002CC3C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAD56612114142C002CC3C9 /* LaunchScreen.storyboard */; };
+		FEAD5671211418E7002CC3C9 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD5670211418E7002CC3C9 /* StartController.swift */; };
+		FEAD567321142BFA002CC3C9 /* CustomerLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD567221142BFA002CC3C9 /* CustomerLoginController.swift */; };
+		FEAD56752114313A002CC3C9 /* DriverLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD56742114313A002CC3C9 /* DriverLoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FEAD56552114142A002CC3C9 /* PetTaxiIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetTaxiIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAD56582114142A002CC3C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEAD565A2114142A002CC3C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEAD565A2114142A002CC3C9 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		FEAD565D2114142A002CC3C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEAD565F2114142C002CC3C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEAD56622114142C002CC3C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEAD56642114142C002CC3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEAD5670211418E7002CC3C9 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
+		FEAD567221142BFA002CC3C9 /* CustomerLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerLoginController.swift; sourceTree = "<group>"; };
+		FEAD56742114313A002CC3C9 /* DriverLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverLoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +72,10 @@
 			isa = PBXGroup;
 			children = (
 				FEAD56582114142A002CC3C9 /* AppDelegate.swift */,
-				FEAD565A2114142A002CC3C9 /* ViewController.swift */,
+				FEAD565A2114142A002CC3C9 /* MainController.swift */,
+				FEAD5670211418E7002CC3C9 /* StartController.swift */,
+				FEAD567221142BFA002CC3C9 /* CustomerLoginController.swift */,
+				FEAD56742114313A002CC3C9 /* DriverLoginController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -167,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEAD565B2114142A002CC3C9 /* ViewController.swift in Sources */,
+				FEAD565B2114142A002CC3C9 /* MainController.swift in Sources */,
 				FEAD56592114142A002CC3C9 /* AppDelegate.swift in Sources */,
+				FEAD5671211418E7002CC3C9 /* StartController.swift in Sources */,
+				FEAD56752114313A002CC3C9 /* DriverLoginController.swift in Sources */,
+				FEAD567321142BFA002CC3C9 /* CustomerLoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
