@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67436798DD6168E5367A5F33 /* Pods_PetTaxiIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BB517636259E2D18402A0D /* Pods_PetTaxiIos.framework */; };
 		FEAD56592114142A002CC3C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD56582114142A002CC3C9 /* AppDelegate.swift */; };
 		FEAD565B2114142A002CC3C9 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD565A2114142A002CC3C9 /* MainController.swift */; };
 		FEAD565E2114142A002CC3C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAD565C2114142A002CC3C9 /* Main.storyboard */; };
@@ -15,9 +16,13 @@
 		FEAD5671211418E7002CC3C9 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD5670211418E7002CC3C9 /* StartController.swift */; };
 		FEAD567321142BFA002CC3C9 /* CustomerLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD567221142BFA002CC3C9 /* CustomerLoginController.swift */; };
 		FEAD56752114313A002CC3C9 /* DriverLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD56742114313A002CC3C9 /* DriverLoginController.swift */; };
+		FED26B352116C2590076DD82 /* CustomerMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED26B342116C2590076DD82 /* CustomerMapController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32BB517636259E2D18402A0D /* Pods_PetTaxiIos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetTaxiIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB7B03E61928A57AE0F73DD /* Pods-PetTaxiIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetTaxiIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetTaxiIos/Pods-PetTaxiIos.release.xcconfig"; sourceTree = "<group>"; };
+		603A64F1D7B7C31DC970DAD9 /* Pods-PetTaxiIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetTaxiIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetTaxiIos/Pods-PetTaxiIos.debug.xcconfig"; sourceTree = "<group>"; };
 		FEAD56552114142A002CC3C9 /* PetTaxiIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetTaxiIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAD56582114142A002CC3C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEAD565A2114142A002CC3C9 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		FEAD5670211418E7002CC3C9 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
 		FEAD567221142BFA002CC3C9 /* CustomerLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerLoginController.swift; sourceTree = "<group>"; };
 		FEAD56742114313A002CC3C9 /* DriverLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverLoginController.swift; sourceTree = "<group>"; };
+		FED26B342116C2590076DD82 /* CustomerMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerMapController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67436798DD6168E5367A5F33 /* Pods_PetTaxiIos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2272C7EB6BBC8F185EC6C46A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32BB517636259E2D18402A0D /* Pods_PetTaxiIos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9D25E2A64CAAA059A9DE3F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				603A64F1D7B7C31DC970DAD9 /* Pods-PetTaxiIos.debug.xcconfig */,
+				3DB7B03E61928A57AE0F73DD /* Pods-PetTaxiIos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FEAD564C2114142A002CC3C9 = {
 			isa = PBXGroup;
 			children = (
 				FEAD56572114142A002CC3C9 /* PetTaxiIos */,
 				FEAD56562114142A002CC3C9 /* Products */,
+				C9D25E2A64CAAA059A9DE3F4 /* Pods */,
+				2272C7EB6BBC8F185EC6C46A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +102,7 @@
 				FEAD5670211418E7002CC3C9 /* StartController.swift */,
 				FEAD567221142BFA002CC3C9 /* CustomerLoginController.swift */,
 				FEAD56742114313A002CC3C9 /* DriverLoginController.swift */,
+				FED26B342116C2590076DD82 /* CustomerMapController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -112,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEAD56672114142C002CC3C9 /* Build configuration list for PBXNativeTarget "PetTaxiIos" */;
 			buildPhases = (
+				F4C6B6B391A11C7A017C7C87 /* [CP] Check Pods Manifest.lock */,
 				FEAD56512114142A002CC3C9 /* Sources */,
 				FEAD56522114142A002CC3C9 /* Frameworks */,
 				FEAD56532114142A002CC3C9 /* Resources */,
+				FD320FB2321F357F1DBAF067 /* [CP] Embed Pods Frameworks */,
+				496428A5B5C6E2B6FD0391CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,6 +201,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		496428A5B5C6E2B6FD0391CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PetTaxiIos/Pods-PetTaxiIos-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetTaxiIos/Pods-PetTaxiIos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4C6B6B391A11C7A017C7C87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetTaxiIos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD320FB2321F357F1DBAF067 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PetTaxiIos/Pods-PetTaxiIos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetTaxiIos/Pods-PetTaxiIos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FEAD56512114142A002CC3C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -180,6 +267,7 @@
 				FEAD56592114142A002CC3C9 /* AppDelegate.swift in Sources */,
 				FEAD5671211418E7002CC3C9 /* StartController.swift in Sources */,
 				FEAD56752114313A002CC3C9 /* DriverLoginController.swift in Sources */,
+				FED26B352116C2590076DD82 /* CustomerMapController.swift in Sources */,
 				FEAD567321142BFA002CC3C9 /* CustomerLoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +410,7 @@
 		};
 		FEAD56682114142C002CC3C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 603A64F1D7B7C31DC970DAD9 /* Pods-PetTaxiIos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -340,6 +429,7 @@
 		};
 		FEAD56692114142C002CC3C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB7B03E61928A57AE0F73DD /* Pods-PetTaxiIos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
