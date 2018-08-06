@@ -17,6 +17,7 @@
 		FEAD567321142BFA002CC3C9 /* CustomerLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD567221142BFA002CC3C9 /* CustomerLoginController.swift */; };
 		FEAD56752114313A002CC3C9 /* DriverLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD56742114313A002CC3C9 /* DriverLoginController.swift */; };
 		FED26B352116C2590076DD82 /* CustomerMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED26B342116C2590076DD82 /* CustomerMapController.swift */; };
+		FED26B3721186A720076DD82 /* DriverRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED26B3621186A720076DD82 /* DriverRequestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FEAD567221142BFA002CC3C9 /* CustomerLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerLoginController.swift; sourceTree = "<group>"; };
 		FEAD56742114313A002CC3C9 /* DriverLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverLoginController.swift; sourceTree = "<group>"; };
 		FED26B342116C2590076DD82 /* CustomerMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerMapController.swift; sourceTree = "<group>"; };
+		FED26B3621186A720076DD82 /* DriverRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverRequestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				FEAD567221142BFA002CC3C9 /* CustomerLoginController.swift */,
 				FEAD56742114313A002CC3C9 /* DriverLoginController.swift */,
 				FED26B342116C2590076DD82 /* CustomerMapController.swift */,
+				FED26B3621186A720076DD82 /* DriverRequestViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -210,10 +213,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PetTaxiIos/Pods-PetTaxiIos-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -264,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEAD565B2114142A002CC3C9 /* MainController.swift in Sources */,
+				FED26B3721186A720076DD82 /* DriverRequestViewController.swift in Sources */,
 				FEAD56592114142A002CC3C9 /* AppDelegate.swift in Sources */,
 				FEAD5671211418E7002CC3C9 /* StartController.swift in Sources */,
 				FEAD56752114313A002CC3C9 /* DriverLoginController.swift in Sources */,
